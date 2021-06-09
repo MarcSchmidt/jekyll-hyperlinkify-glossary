@@ -6,7 +6,7 @@ Gem::Specification.new do |s|
   s.summary     = "A Jekyll gem to replace glossary entries in html with hyperlinks"
   s.description = "A Jekyll gem to replace glossary entries in html with hyperlinks"
   s.authors     = ["Marc Schmidt"]
-  s.license       = ['MIT']
+  s.license     = 'MIT'
   s.homepage    = ["https://github.com/MarcSchmidt/jekyll-hyperlinkify-glossary"]
   s.files       = ["lib/jekyll-hyperlinkify-glossary.rb"]
   s.required_ruby_version = ">= 2.4.0"
