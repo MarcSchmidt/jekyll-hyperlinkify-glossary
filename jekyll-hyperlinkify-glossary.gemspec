@@ -8,7 +8,7 @@ Gem::Specification.new do |s|
   s.authors     = ["Marc Schmidt"]
   s.license     = "MIT"
   s.homepage    = "https://github.com/MarcSchmidt/jekyll-hyperlinkify-glossary"
-  s.files       = ["lib/jekyll-hyperlinkify-glossary.rb"]
+  s.files       = ["lib/jekyll-hyperlinkify-glossary.rb", "lib/hooks/enrich_documents_with_glossary.rb"]
   s.required_ruby_version = ">= 2.4.0"
   s.add_dependency "jekyll", ">= 3.7"
 end

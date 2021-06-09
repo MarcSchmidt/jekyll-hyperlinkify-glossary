@@ -1,5 +1,5 @@
-require "jekyll"
-require "hooks/enrich_documents_with_glossary.rb"
+require 'jekyll'
+require 'hooks/enrich_documents_with_glossary'
 
 # Get all glossary entries from the page an replace all terms with appropriate hyperlinks
 module Jekyll 
