@@ -14,13 +14,10 @@ module Jekyll
                   puts "This document has no glossary entries: " + document.data["title"].to_s
                   return
               end
-              @test_word = "icf"
-              @test_array = ["icf","inklusion"]
-              @test_url = "/glossary/icf.html"
               document.output = if document.output.include? BODY_START_TAG
                                   process_document(document)
                               else
-                                  process_html_body(document.output)
+                                  process_html_body(document.output, document.data["title"])
                               end
 
           end
