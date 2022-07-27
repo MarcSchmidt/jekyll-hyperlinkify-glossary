@@ -35,6 +35,14 @@ A page can be excluded from the gem by adding `jekyll-hyperlink-glossary` to the
 ```yml
 jekyll-hyperlink-glossary: false
 ```
+## Setting a different base url for the Hyperlinks
+Normaly the plugin creates a Hyperlink with just the permanentlink from the glossary entry. This can be problematic when the glossary is part of a subsite. 
+If this is the case a specific base url for the plugin can be added to the config which will be added before each glossary entry url. It is important to not have a tailing /
+
+```yml
+hyperlinkify_glossary_base_url: /subsite/test
+```
+
 ## How does it work?
 A hook is applied to all pages and documents in the post rendering step and does filter everything in the html body with a regex against the glossary entries. This regex does ignore the html tag for headings (e.g. \<h1>) and links (e.g. \<a>).
 
